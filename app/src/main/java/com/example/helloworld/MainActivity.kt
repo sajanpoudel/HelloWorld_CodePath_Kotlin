@@ -9,17 +9,21 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
+    private companion object {
+        const val TAG = "MainActivity"
+    }
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val button1 = findViewById<Button>(R.id.button)
-        button1.setOnClickListener{
-            Log.v("hello","aa ")
+        val helloButton = findViewById<Button>(R.id.button)
+        helloButton.setOnClickListener{
+            Log.v(TAG, "Hello button clicked")
             Toast.makeText(this, R.string.toast_hello, Toast.LENGTH_SHORT).show()
         }
-        val button2 = findViewById<Button>(R.id.buttongreet)
-        button2.setOnClickListener{
+        val greetButton = findViewById<Button>(R.id.buttongreet)
+        greetButton.setOnClickListener{
             Toast.makeText(this, R.string.toast_greet, Toast.LENGTH_SHORT).show()
         }
     }
