@@ -3,4 +3,7 @@
     <string name="sajan_intro">Hello! My name is Sajan Poudel. I love android development.</string>
     <string name="button_text">SAY HELLO!</string>
     <string name="greetButton">Greet Me!</string>
+    <string name="toast_hello">Hello! Thank You for pressing me.</string>
+    <string name="toast_greet">Hi! Good Morning.</string>
+    <string name="dog_image_description">A picture of a dog</string>
 </resources>
