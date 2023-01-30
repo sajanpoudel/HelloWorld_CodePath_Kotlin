@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 
+/** Single screen app: an image, an introduction and two buttons that show a toast. */
 class MainActivity : AppCompatActivity() {
 
     private companion object {
