@@ -11,6 +11,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     private companion object {
+        /** Tag for log messages written by this screen. */
         const val TAG = "MainActivity"
     }
 
