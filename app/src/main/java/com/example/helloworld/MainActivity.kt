@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         const val TAG = "MainActivity"
     }
 
+    /** Inflates the layout and attaches the click handlers of both buttons. */
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
