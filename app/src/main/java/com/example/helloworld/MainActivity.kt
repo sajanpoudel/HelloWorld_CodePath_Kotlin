@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.toast_hello, Toast.LENGTH_SHORT).show()
         }
         val greetButton = findViewById<Button>(R.id.buttongreet)
+        // "Greet Me!" shows a good morning toast
         greetButton.setOnClickListener{
             Toast.makeText(this, R.string.toast_greet, Toast.LENGTH_SHORT).show()
         }
