@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val helloButton = findViewById<Button>(R.id.button)
         // "SAY HELLO!" logs the click and greets the user
-        helloButton.setOnClickListener{
+        helloButton.setOnClickListener {
             Log.v(TAG, "Hello button clicked")
             Toast.makeText(this, R.string.toast_hello, Toast.LENGTH_SHORT).show()
         }
