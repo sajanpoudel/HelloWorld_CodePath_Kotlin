@@ -19,3 +19,7 @@
 - `MainActivity.kt` sets up the two button click handlers.
 - `res/layout/activity_main.xml` holds the layout: the dog image, the intro text and the two buttons.
 - `res/values/strings.xml` holds every piece of text shown in the app.
+
+## More documentation
+
+- [Screen and views](docs/screens.md)
