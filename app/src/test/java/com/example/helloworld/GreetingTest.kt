@@ -21,4 +21,10 @@ class GreetingTest {
         assertEquals(TimeOfDay.EVENING, Greeting.timeOfDay(17))
         assertEquals(TimeOfDay.EVENING, Greeting.timeOfDay(20))
     }
+
+    @Test
+    fun lateHoursAreNight() {
+        assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(21))
+        assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(23))
+    }
 }
