@@ -33,4 +33,10 @@ class GreetingTest {
         assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(0))
         assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(4))
     }
+
+    @Test
+    fun hoursWrapAroundTheDay() {
+        assertEquals(TimeOfDay.MORNING, Greeting.timeOfDay(29))
+        assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(24))
+    }
 }
