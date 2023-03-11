@@ -39,4 +39,10 @@ class GreetingTest {
         assertEquals(TimeOfDay.MORNING, Greeting.timeOfDay(29))
         assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(24))
     }
+
+    @Test
+    fun negativeHoursWrapBackwards() {
+        assertEquals(TimeOfDay.EVENING, Greeting.timeOfDay(-5))
+        assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(-1))
+    }
 }
