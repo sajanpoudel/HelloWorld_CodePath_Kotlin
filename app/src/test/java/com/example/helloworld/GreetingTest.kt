@@ -45,4 +45,13 @@ class GreetingTest {
         assertEquals(TimeOfDay.EVENING, Greeting.timeOfDay(-5))
         assertEquals(TimeOfDay.NIGHT, Greeting.timeOfDay(-1))
     }
+
+    @Test
+    fun everyHourOfTheDayHasAPartOfTheDay() {
+        val counts = (0..23).groupingBy { Greeting.timeOfDay(it) }.eachCount()
+        assertEquals(7, counts[TimeOfDay.MORNING])
+        assertEquals(5, counts[TimeOfDay.AFTERNOON])
+        assertEquals(4, counts[TimeOfDay.EVENING])
+        assertEquals(8, counts[TimeOfDay.NIGHT])
+    }
 }
