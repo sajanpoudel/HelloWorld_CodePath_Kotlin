@@ -6,5 +6,9 @@
     <string name="greetButton">Greet Me!</string>
     <string name="toast_hello">Hello! Thank You for pressing me.</string>
     <string name="toast_greet">Hi! Good Morning.</string>
+    <string name="greeting_morning">Hi! Good Morning.</string>
+    <string name="greeting_afternoon">Hi! Good Afternoon.</string>
+    <string name="greeting_evening">Hi! Good Evening.</string>
+    <string name="greeting_night">Hi! Good Night.</string>
     <string name="dog_image_description">A picture of a dog</string>
 </resources>
