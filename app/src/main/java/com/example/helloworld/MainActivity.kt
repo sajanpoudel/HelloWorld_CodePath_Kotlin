@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.Toast
+import java.util.Calendar
 
 /** Single screen app: an image, an introduction and two buttons that show a toast. */
 class MainActivity : AppCompatActivity() {
