@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         val greetButton = findViewById<Button>(R.id.buttongreet)
         // "Greet Me!" shows a good morning toast
         greetButton.setOnClickListener {
-            Toast.makeText(this, R.string.toast_greet, Toast.LENGTH_SHORT).show()
+            val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+            Toast.makeText(this, greetingText(Greeting.timeOfDay(hour)), Toast.LENGTH_SHORT).show()
         }
     }
 }
