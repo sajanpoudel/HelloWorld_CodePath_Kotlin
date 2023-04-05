@@ -34,4 +34,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, greetingText(Greeting.timeOfDay(hour)), Toast.LENGTH_SHORT).show()
         }
     }
+
+    /** The string resource that holds the greeting for a part of the day. */
+    private fun greetingText(part: TimeOfDay): Int = when (part) {
+        TimeOfDay.MORNING -> R.string.greeting_morning
+        TimeOfDay.AFTERNOON -> R.string.greeting_afternoon
+        TimeOfDay.EVENING -> R.string.greeting_evening
+        TimeOfDay.NIGHT -> R.string.greeting_night
+    }
 }
