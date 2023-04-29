@@ -23,3 +23,5 @@
 ## More documentation
 
 - [Screen and views](docs/screens.md)
+
+- [Greetings by time of day](docs/greetings.md)
